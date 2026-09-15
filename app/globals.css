@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+/*
+ * Paleta amostrada direto do appmax.com.br (roxo primário, tinta de texto,
+ * tons de fundo e verde/vermelho de status) — não é chute.
+ */
+:root {
+  --background: #f6f5fb;
+  --foreground: #202a44;
+
+  --color-am-purple: #9b6afa;
+  --color-am-purple-hover: #8452e0;
+  --color-am-purple-soft: #f3f0fa;
+  --color-am-purple-soft-2: #f7f3ff;
+
+  --color-am-ink: #202a44;
+  --color-am-ink-muted: #5b6478;
+
+  --color-am-dark: #131326;
+  --color-am-dark-2: #1c1b33;
+
+  --color-am-bg: #f6f5fb;
+  --color-am-card: #ffffff;
+  --color-am-border: #e7e4f0;
+
+  --color-am-success-bg: #ecfdf5;
+  --color-am-success-text: #047857;
+  --color-am-warn-bg: #fffbeb;
+  --color-am-warn-text: #92400e;
+  --color-am-danger-bg: #fef2f2;
+  --color-am-danger-text: #dc2626;
+  --color-am-info-bg: #f3f0fa;
+  --color-am-info-text: #6b3fa0;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter), var(--font-geist-sans), -apple-system,
+    BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: var(--font-geist-mono);
+
+  --color-am-purple: var(--color-am-purple);
+  --color-am-purple-hover: var(--color-am-purple-hover);
+  --color-am-purple-soft: var(--color-am-purple-soft);
+  --color-am-purple-soft-2: var(--color-am-purple-soft-2);
+  --color-am-ink: var(--color-am-ink);
+  --color-am-ink-muted: var(--color-am-ink-muted);
+  --color-am-dark: var(--color-am-dark);
+  --color-am-dark-2: var(--color-am-dark-2);
+  --color-am-bg: var(--color-am-bg);
+  --color-am-card: var(--color-am-card);
+  --color-am-border: var(--color-am-border);
+  --color-am-success-bg: var(--color-am-success-bg);
+  --color-am-success-text: var(--color-am-success-text);
+  --color-am-warn-bg: var(--color-am-warn-bg);
+  --color-am-warn-text: var(--color-am-warn-text);
+  --color-am-danger-bg: var(--color-am-danger-bg);
+  --color-am-danger-text: var(--color-am-danger-text);
+  --color-am-info-bg: var(--color-am-info-bg);
+  --color-am-info-text: var(--color-am-info-text);
+}
+
+/*
+ * De propósito SEM bloco `prefers-color-scheme: dark` — a paleta é a marca
+ * Appmax (fundo claro), sem modo escuro. As classes `dark:` que ainda
+ * existirem no JSX viram no-op.
+ */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
