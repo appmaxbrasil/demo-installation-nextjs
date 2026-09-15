@@ -61,7 +61,7 @@ nasce depois nunca é interceptado — mesma pegadinha do container do Apple Pay
 
 O ano aceita 2 ou 4 dígitos (`31` e `2031` ambos tokenizam) — testado.
 
-## 2. `onSuccess` é POLIMÓRFICO — a doc está errada
+## 2. `onSuccess` é POLIMÓRFICO
 
 A doc (`/guides/appmax-js`) promete `onSuccess({ ip, token? })`. **Esse
 objeto com `token` não existe.** No fonte do SDK:
